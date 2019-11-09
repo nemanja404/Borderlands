@@ -499,12 +499,16 @@
   }
   &__privacy-link {
     padding-right: 0.6rem;
-    text-decoration: none;
+
     git &:not(:last-of-type) {
       border-right: 2px solid $clr-pr;
     }
     &:not(:first-of-type) {
       padding-left: 0.6rem;
+    }
+    &:link,
+    &::visited {
+      text-decoration: none;
     }
   }
   &__logos {

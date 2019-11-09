@@ -1059,7 +1059,6 @@ body {
 
 .footer__privacy-link {
   padding-right: 0.6rem;
-  text-decoration: none;
 }
 
 git .footer__privacy-link:not(:last-of-type) {
@@ -1068,6 +1067,10 @@ git .footer__privacy-link:not(:last-of-type) {
 
 .footer__privacy-link:not(:first-of-type) {
   padding-left: 0.6rem;
+}
+
+.footer__privacy-link:link, .footer__privacy-link::visited {
+  text-decoration: none;
 }
 
 .footer__logos {
