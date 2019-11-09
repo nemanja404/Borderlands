@@ -1,0 +1,66 @@
+@font-face {
+  src: url("../font/RobotoMono-Regular.ttf");
+  font-family: roboto;
+}
+
+@mixin res($breakpoint) {
+  @if $breakpoint == phone {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == smTab {
+    @media screen and (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lgTab {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+$clr-pr: #fdd835;
+$clr-dark: #141414;
+$clr-white: #f1f1f1;
+$clr-blue: #03a9f4;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include res(lgTab) {
+    font-size: 50%;
+  }
+  @include res(smTab) {
+    font-size: 45%;
+  }
+  @include res(phone) {
+    font-size: 40%;
+  }
+}
+body {
+  font-family: roboto;
+}
+
+@keyframes slider {
+  0% {
+    transform: translatex(100%);
+  }
+
+  100% {
+    transform: translatex(0);
+  }
+}
+
+::selection {
+  color: $clr-dark;
+  background-color: $clr-pr;
+}

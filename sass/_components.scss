@@ -1,0 +1,252 @@
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -11;
+  opacity: 0.6;
+
+  &__content {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+}
+.svg {
+  width: 3rem;
+  height: 3rem;
+  fill: $clr-white;
+  cursor: pointer;
+
+  &:nth-of-type(2) {
+    transform: rotate(270deg);
+  }
+  &:nth-of-type(1) {
+    margin-left: 3rem;
+  }
+  &:nth-of-type(1):hover,
+  &:nth-of-type(2):hover {
+    fill: $clr-pr;
+  }
+}
+.btn {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+  border: 0;
+  clip-path: polygon(15% 0, 100% 0, 100% 69%, 85% 100%, 0 100%, 0 31%);
+  letter-spacing: -1.5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+  z-index: -11;
+  &:last-child {
+    margin-left: 3rem;
+  }
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.btn--p1 {
+  padding: 0.8rem 2rem;
+}
+.btn--p2 {
+  padding: 1.5rem 4rem;
+}
+.btn--p3 {
+  padding: 1.5rem 6rem;
+}
+.btn--yellow {
+  background-color: $clr-pr;
+}
+.btn--transparent {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #fff;
+}
+.btn--center {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+.btn--centers {
+  text-align: center;
+  margin: 3rem 0;
+}
+.btn--dark {
+  background-color: $clr-dark;
+  border: 4px solid $clr-blue;
+  color: $clr-white;
+}
+
+// slider
+
+.slider {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    black,
+    lighten($clr-dark, 7%),
+    lighten($clr-dark, 7%),
+    black
+  );
+
+  &__h1 {
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: $clr-pr;
+    font-size: 3rem;
+  }
+
+  &__span {
+    position: relative;
+    display: inline-block;
+    animation: slider 30s linear infinite;
+
+    &:before {
+      content: attr(data-text);
+      position: absolute;
+      left: -100%;
+      top: 0;
+    }
+  }
+}
+//
+
+.h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+  padding: 5rem 0;
+  letter-spacing: -3px;
+  font-style: italic;
+  color: $clr-pr;
+}
+
+.h2 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: -3px;
+  font-style: italic;
+  color: $clr-pr;
+  text-shadow: -15px 15px 20px black;
+  font-weight: 900;
+}
+
+.small-p {
+  color: $clr-white;
+  font-size: 1.3rem;
+}
+.big-p {
+  color: $clr-white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -1.6px;
+}
+
+.py1 {
+  padding: 1rem 0;
+}
+
+.py2 {
+  padding: 2rem 0;
+}
+
+.my1 {
+  margin: 1rem 0;
+}
+.my2 {
+  margin: 2rem 0;
+}
+
+.mx1 {
+  margin: 0 1rem;
+}
+.mx11 {
+  margin-right: 1rem;
+}
+
+.active {
+  background-color: $clr-white;
+  color: $clr-dark;
+}
+.btn:active,
+.btn:focus {
+  background-color: $clr-white;
+  color: $clr-dark;
+}
+
+.select {
+  display: block;
+}
+
+.cy {
+  color: $clr-pr;
+}
+.cb {
+  color: $clr-blue;
+}
+.cw {
+  color: $clr-white;
+}
+
+.tac {
+  text-align: center;
+}
+
+.pyb1 {
+  padding-bottom: 1rem;
+}
+.px2 {
+  padding: 0 2rem;
+}
+.px5 {
+  padding: 0 5rem;
+}
+.pyb2 {
+  padding-bottom: 2rem;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+.tdn {
+  text-decoration: none;
+}
+.fs1rem {
+  font-size: 0.8rem;
+}
+// social media
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__icons {
+    width: 3rem;
+    height: 3rem;
+    fill: $clr-white;
+    border: 1px solid $clr-white;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0.4rem;
+    margin: 0 0.5rem;
+    opacity: 0.7;
+    transition: all 1s ease;
+    cursor: pointer;
+    &:hover {
+      transform: translatey(-0.6rem);
+      opacity: 1;
+    }
+  }
+}
