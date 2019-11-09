@@ -507,8 +507,10 @@
       padding-left: 0.6rem;
     }
     &:link,
-    &::visited {
+    &:visited,
+    &:active {
       text-decoration: none;
+      color: $clr-pr;
     }
   }
   &__logos {
