@@ -48,7 +48,6 @@ html {
 }
 body {
   font-family: roboto;
-  outline: none;
 }
 
 @keyframes slider {
@@ -64,4 +63,8 @@ body {
 ::selection {
   color: $clr-dark;
   background-color: $clr-pr;
+}
+
+img {
+  outline: none;
 }

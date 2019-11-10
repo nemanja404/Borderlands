@@ -36,7 +36,6 @@ html {
 
 body {
   font-family: roboto;
-  outline: none;
 }
 
 @-webkit-keyframes slider {
@@ -69,6 +68,10 @@ body {
 ::selection {
   color: #141414;
   background-color: #fdd835;
+}
+
+img {
+  outline: none;
 }
 
 .bg-video {
@@ -419,8 +422,8 @@ body {
 }
 
 .popup__logotip {
-  width: 25rem;
-  height: 10rem;
+  height: 7rem;
+  width: 14rem;
 }
 
 .popup__exit {
