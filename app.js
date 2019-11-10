@@ -105,3 +105,13 @@ function heightAdd() {
     list.classList.toggle('heightAdded');
 }
 
+
+
+document.addEventListener('scroll', scrolled);
+function scrolled() {
+    const scroll = window.scrollY;
+    if (scroll > 300) {
+        list.classList.remove('heightAdded');
+        console.log('lada');
+    }
+}
