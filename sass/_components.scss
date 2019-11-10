@@ -404,6 +404,11 @@
   transition: 0.3s ease;
   display: flex;
   flex-direction: column;
+  @include res(phone) {
+    bottom: 2rem;
+    right: 50%;
+    transform: translatex(50%);
+  }
 
   &::after {
     content: "Back to top";
@@ -413,6 +418,9 @@
     right: 0;
     opacity: 0;
     transition: 0.3s ease;
+    @include res(phone) {
+      bottom: 0;
+    }
   }
   &:hover {
     color: $clr-pr;

@@ -561,6 +561,15 @@ body {
           flex-direction: column;
 }
 
+@media screen and (max-width: 600px) {
+  .back {
+    bottom: 2rem;
+    right: 50%;
+    -webkit-transform: translatex(50%);
+            transform: translatex(50%);
+  }
+}
+
 .back::after {
   content: "Back to top";
   color: white;
@@ -570,6 +579,12 @@ body {
   opacity: 0;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .back::after {
+    bottom: 0;
+  }
 }
 
 .back:hover {
@@ -1274,6 +1289,12 @@ body {
 @media screen and (max-width: 900px) {
   .footer {
     padding: 4rem 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding-bottom: 10rem;
   }
 }
 

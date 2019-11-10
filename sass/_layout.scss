@@ -494,6 +494,9 @@
   @include res(smTab) {
     padding: 4rem 5rem;
   }
+  @include res(phone) {
+    padding-bottom: 10rem;
+  }
 
   &__terms {
     display: flex;
