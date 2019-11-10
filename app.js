@@ -112,6 +112,6 @@ function scrolled() {
     const scroll = window.scrollY;
     if (scroll > 300) {
         list.classList.remove('heightAdded');
-        console.log('lada');
+
     }
 }
