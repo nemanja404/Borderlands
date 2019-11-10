@@ -70,8 +70,11 @@
   display: flex;
   justify-content: center;
   margin: 3rem 0;
-  transition: 0.4s ease;
+
   cursor: pointer;
+}
+.ml-2 {
+  margin-left: 2rem;
 }
 .btn--centers {
   text-align: center;
@@ -182,6 +185,10 @@
 .pb4rem {
   padding-bottom: 3rem;
 }
+.db {
+  display: block;
+  width: 100%;
+}
 .active {
   background-color: $clr-white;
   color: $clr-dark;
@@ -283,9 +290,14 @@
   visibility: hidden;
   opacity: 0;
   transition: 0.4s ease-in-out;
+  overflow-y: hidden;
+
   &:target {
     visibility: visible;
     opacity: 1;
+  }
+  &__logotip {
+    width: 40rem;
   }
   &__exit {
     display: flex;
@@ -309,12 +321,18 @@
     border-bottom: 2px solid $clr-blue;
     background-color: darken($clr-blue, 40%);
     clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%);
+
+    @include res(phone) {
+      min-width: 50rem;
+    }
   }
 }
 
 .form {
   padding: 4rem 10rem;
-
+  @include res(phone) {
+    padding: 2rem 4rem;
+  }
   &__input {
     font-size: 1.6rem;
     padding: 1rem 0.5rem;
@@ -325,6 +343,7 @@
     display: block;
     width: 100%;
     transition: 1s ease;
+
     &:focus {
       outline: none;
     }

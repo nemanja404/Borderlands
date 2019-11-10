@@ -49,3 +49,16 @@ function clickOutsidee(e) {
 
     }
 }
+
+const popup2 = document.querySelector('#popup3');
+window.addEventListener('click', clickOutsideee);
+
+function clickOutsideee(e) {
+    if (e.target == popup2) {
+        popup2.style.display = 'none';
+
+    } else {
+        popup2.style.display = 'block';
+
+    }
+}

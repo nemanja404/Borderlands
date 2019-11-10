@@ -34,7 +34,7 @@
           </ul>
         </div>
         <div class="header__buttons">
-          <button href="#" class="btn btn--yellow btn--p1">Buy now</button>
+          <a href="#buy"><button href="#" class="btn btn--yellow btn--p1">Buy now</button></a>
           <svg class="svg">
             <use xlink:href="./icon/sprite.svg#md-american-football"></use>
           </svg>
@@ -54,8 +54,8 @@
       </div>
       <div class="header__text">
         <h1 class="header__h1">Beware! Bloody Harvest event is live!</h1>
-        <button class="btn btn--yellow btn--p3">Buy now</button>
-        <button class="btn btn--dark btn--p2">Watch trailer</button>
+        <a href="#buy"><button class="btn btn--yellow btn--p3">Buy now</button></a>
+       <a target="_blank"href="https://www.youtube.com/watch?v=Av5Eyx3bGtM"> <button class="btn btn--dark btn--p2">Watch trailer</button></a>
       </div>
     </header>
     <!-- END OF HEADER -->
@@ -154,7 +154,7 @@
             Join the Vault Hunter program and unlock sweet in game loot for
             Borderlands games.
           </p>
-          <button class="btn btn--dark btn--p3 my2" >Learn more</button>
+         <a href="#popup3"> <button class="btn btn--dark btn--p3 my2" >Learn more</button></a>
          <a href="#popup1""> <button class="btn btn--dark btn--p3 my2" >Login / Sign up</button></a>
         </div>
       </div>
@@ -263,7 +263,7 @@
     </section>
     <!-- community -->
     <!-- Buy now-->
-    <section class="buy">
+    <section class="buy" id="buy">
       <h1 class="h1 pyb1">Buy now</h1>
       <p class="big-p tac pyb2 ">Choose your edition</p>
       <div class="buy__container">
@@ -441,6 +441,27 @@
             </div>
     </div>
     </div>
+    <div class="popup" id="popup3">
+        <div class="popup__content">
+          <div class="popup__exit">
+          <h1 class="h1 db px3 tac cw">Become vip</h1>
+         <a href="#member"><svg class="svg">
+              <use xlink:href="./icon/sprite.svg#md-arrow-dropleft"></use>
+            </svg></a> 
+        </div>
+        <div class="btn--center">
+  <img class="popup__logotip" src="./img/bl3.png" alt=""></div>
+          <p class="small-p tac mx1">You aren’t currently logged in to SHiFT, which is required in order to register for a Borderlands VIP account. Please click the button below to log in or create a new SHiFT account.
+            </p>
+            
+            <div class="btn--center ">
+              <button class="btn btn--dark btn--p3">Continue</button></div>
+              <div class="btn--center">
+              <p class="small-p cb tac ml-2 ">
+                  PRIVACY | VIP TERMS OF SERVICE VIP</p>
+                </div>
+        </div>
+        </div>
 <!-- POPUP for subscribe -->
     <script src="app.js"></script>
   </body>
