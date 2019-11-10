@@ -13,6 +13,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -331,6 +332,10 @@ body {
   padding-bottom: 1rem;
 }
 
+.px1 {
+  padding: 0 1rem;
+}
+
 .px2 {
   padding: 0 2rem;
 }
@@ -538,6 +543,50 @@ body {
   .svgDD {
     display: block;
   }
+}
+
+.back {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.back::after {
+  content: "Back to top";
+  color: white;
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.back:hover {
+  color: #fdd835;
+}
+
+.back:hover::after {
+  opacity: 1;
+}
+
+.svgdown {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  fill: white;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .header {
@@ -1219,6 +1268,7 @@ body {
 .footer {
   background-color: #141414;
   padding: 4rem 15rem;
+  position: relative;
 }
 
 @media screen and (max-width: 900px) {

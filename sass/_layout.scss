@@ -490,6 +490,7 @@
 .footer {
   background-color: $clr-dark;
   padding: 4rem 15rem;
+  position: relative;
   @include res(smTab) {
     padding: 4rem 5rem;
   }

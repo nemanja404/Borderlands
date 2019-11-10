@@ -39,6 +39,7 @@ $clr-blue: #03a9f4;
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 
   @include res(lgTab) {
