@@ -4,6 +4,11 @@
 }
 
 @mixin res($breakpoint) {
+  @if $breakpoint == sphone {
+    @media screen and (max-width: 470px) {
+      @content;
+    }
+  }
   @if $breakpoint == phone {
     @media screen and (max-width: 600px) {
       @content;
