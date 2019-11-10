@@ -95,3 +95,13 @@ function clickOutsideee(e) {
     }
 }
 
+// dropdown menu
+
+const svg = document.querySelector('.svgDD');
+const list = document.querySelector('.header__list');
+svg.addEventListener('click', heightAdd);
+
+function heightAdd() {
+    list.classList.toggle('heightAdded');
+}
+

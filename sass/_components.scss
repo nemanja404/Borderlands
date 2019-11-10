@@ -376,3 +376,18 @@
     }
   }
 }
+
+// svg dropdown menu
+
+.svgDD {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    transform: rotate(-90deg);
+  }
+  @include res(phone) {
+    display: block;
+  }
+}
