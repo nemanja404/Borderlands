@@ -70,10 +70,6 @@ body {
   background-color: #fdd835;
 }
 
-img {
-  outline: none;
-}
-
 .bg-video {
   position: absolute;
   top: 0;
