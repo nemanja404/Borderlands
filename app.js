@@ -1,4 +1,24 @@
 
+window.addEventListener('load', reset);
+const all = document.querySelector('.popup');
+function reset(e) {
+    all.style.display = 'none'
+}
+window.addEventListener('load', reset2);
+const all2 = document.querySelector('#popup2');
+function reset2(e) {
+    all2.style.display = 'none'
+}
+window.addEventListener('load', reset3);
+const all3 = document.querySelector('#popup3');
+function reset3(e) {
+    all3.style.display = 'none'
+}
+window.addEventListener('load', reset4);
+const all4 = document.querySelector('#popup4');
+function reset4(e) {
+    all4.style.display = 'none'
+}
 
 const buttons = document.querySelector('.tabs__buttons');
 const img = document.querySelectorAll('.tabs__pic');
@@ -74,3 +94,4 @@ function clickOutsideee(e) {
 
     }
 }
+
