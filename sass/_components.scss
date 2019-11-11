@@ -247,9 +247,7 @@
 .ttu {
   text-transform: uppercase;
 }
-.tdn {
-  text-decoration: none;
-}
+
 .fs1rem {
   font-size: 0.8rem;
 }
@@ -257,6 +255,9 @@
   width: 60%;
 }
 
+.shdw {
+  text-shadow: $txt-shdw;
+}
 // social media
 
 .social {
@@ -294,7 +295,6 @@
   visibility: hidden;
   opacity: 0;
   transition: 0.4s ease-in-out;
-  overflow-y: hidden;
 
   &:target {
     visibility: visible;
@@ -404,7 +404,7 @@
   transition: 0.3s ease;
   display: flex;
   flex-direction: column;
-  @include res(phone) {
+  @include res(smTab) {
     bottom: 2rem;
     right: 50%;
     transform: translatex(50%);
@@ -418,8 +418,9 @@
     right: 0;
     opacity: 0;
     transition: 0.3s ease;
-    @include res(phone) {
+    @include res(smTab) {
       bottom: 0;
+      opacity: 1;
     }
   }
   &:hover {
@@ -436,3 +437,5 @@
   fill: white;
   transform: rotate(90deg);
 }
+
+// images on media page

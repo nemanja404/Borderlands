@@ -39,59 +39,72 @@ buttons.addEventListener('click', function (e) {
     }
 });
 
-// popup exit
-
+//popup exit
 const popup = document.querySelector('.popup');
+const newspopup = document.querySelector('#popup2');
+const member = document.querySelector('#popup3');
+const gearbox = document.querySelector('#popup4');
+const btn1 = document.querySelector('.btn1');
+btn1.addEventListener('click', open);
+const btn2 = document.querySelector('.btn2');
+btn2.addEventListener('click', open2);
+const btn3 = document.querySelector('.btn3');
+btn3.addEventListener('click', open3);
+const btn4 = document.querySelector('.btn4');
+btn4.addEventListener('click', open4);
+
+function open() {
+    popup.style.display = 'block';
+    console.log('uspeh');
+}
+function open2() {
+    newspopup.style.display = 'block';
+    console.log('uspeh');
+}
+function open3() {
+    member.style.display = 'block';
+    console.log('uspeh');
+}
+function open4() {
+    gearbox.style.display = 'block';
+    console.log('uspeh');
+}
+
+
 window.addEventListener('click', clickOutside);
 
 function clickOutside(e) {
     if (e.target == popup) {
         popup.style.display = 'none';
 
-    } else {
-        popup.style.display = 'block';
-
     }
 }
 
-//
 
+window.addEventListener('click', clickingOutside);
 
-const popup1 = document.querySelector('#popup2');
-window.addEventListener('click', clickOutsidee);
-
-function clickOutsidee(e) {
-    if (e.target == popup1) {
-        popup1.style.display = 'none';
-
-    } else {
-        popup1.style.display = 'block';
-
-    }
-}
-const popup4 = document.querySelector('#popup4');
-window.addEventListener('click', clickOutsid);
-
-function clickOutsid(e) {
-    if (e.target == popup4) {
-        popup4.style.display = 'none';
-
-    } else {
-        popup4.style.display = 'block';
-
+function clickingOutside(e) {
+    if (e.target == newspopup) {
+        newspopup.style.display = 'none';
+        console.log('newspopup');
     }
 }
 
-const popup2 = document.querySelector('#popup3');
-window.addEventListener('click', clickOutsideee);
+window.addEventListener('click', clickedOutside);
 
-function clickOutsideee(e) {
-    if (e.target == popup2) {
-        popup2.style.display = 'none';
+function clickedOutside(e) {
+    if (e.target == member) {
+        member.style.display = 'none';
+        console.log('memberpopup');
+    }
+}
 
-    } else {
-        popup2.style.display = 'block';
+window.addEventListener('click', clickerOutside);
 
+function clickerOutside(e) {
+    if (e.target == gearbox) {
+        gearbox.style.display = 'none';
+        console.log('gerboxPopup');
     }
 }
 

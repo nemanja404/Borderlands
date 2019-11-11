@@ -30,6 +30,7 @@ $clr-pr: #fdd835;
 $clr-dark: #141414;
 $clr-white: #f1f1f1;
 $clr-blue: #03a9f4;
+$txt-shdw: -5px 5px 8px darken($clr-blue, 30%);
 *,
 *::after,
 *::before {
