@@ -156,6 +156,13 @@ body {
 }
 
 .btn--center {
+  display: block;
+  text-align: center;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+
+.btn--centerz {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1400,8 +1407,11 @@ git .footer__privacy-link:not(:last-of-type) {
   width: 4rem;
   height: 4rem;
   fill: rgba(241, 241, 241, 0);
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: fill 0.4s ease, -webkit-transform 1.2s ease;
+  transition: fill 0.4s ease, -webkit-transform 1.2s ease;
+  transition: fill 0.4s ease, transform 1.2s ease;
+  transition: fill 0.4s ease, transform 1.2s ease, -webkit-transform 1.2s ease;
+  z-index: 1111;
 }
 
 .image {
@@ -1439,6 +1449,8 @@ git .footer__privacy-link:not(:last-of-type) {
 
 .image:hover .header--media__svg {
   fill: #f1f1f1;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .img-1 {

@@ -67,10 +67,15 @@
   color: #fff;
 }
 .btn--center {
+  display: block;
+  text-align: center;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+.btn--centerz {
   display: flex;
   justify-content: center;
   margin: 3rem 0;
-
   cursor: pointer;
 }
 .ml-2 {

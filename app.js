@@ -55,19 +55,19 @@ btn4.addEventListener('click', open4);
 
 function open() {
     popup.style.display = 'block';
-    console.log('uspeh');
+
 }
 function open2() {
     newspopup.style.display = 'block';
-    console.log('uspeh');
+
 }
 function open3() {
     member.style.display = 'block';
-    console.log('uspeh');
+
 }
 function open4() {
     gearbox.style.display = 'block';
-    console.log('uspeh');
+
 }
 
 
@@ -86,7 +86,7 @@ window.addEventListener('click', clickingOutside);
 function clickingOutside(e) {
     if (e.target == newspopup) {
         newspopup.style.display = 'none';
-        console.log('newspopup');
+
     }
 }
 
@@ -95,7 +95,7 @@ window.addEventListener('click', clickedOutside);
 function clickedOutside(e) {
     if (e.target == member) {
         member.style.display = 'none';
-        console.log('memberpopup');
+
     }
 }
 
@@ -104,7 +104,7 @@ window.addEventListener('click', clickerOutside);
 function clickerOutside(e) {
     if (e.target == gearbox) {
         gearbox.style.display = 'none';
-        console.log('gerboxPopup');
+
     }
 }
 

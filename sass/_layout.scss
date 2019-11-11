@@ -583,7 +583,8 @@
     width: 4rem;
     height: 4rem;
     fill: rgba($clr-white, 0);
-    transition: 0.4s ease;
+    transition: fill 0.4s ease, transform 1.2s ease;
+    z-index: 1111;
   }
 }
 .image {
@@ -611,6 +612,7 @@
   }
   &:hover .header--media__svg {
     fill: rgba($clr-white, 1);
+    transform: scale(1.4);
   }
 }
 
