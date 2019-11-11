@@ -577,6 +577,32 @@
       "img9 img9 img3 img3"
       "img9 img9 img8 img8"
       "img7 img7 img7 img7";
+    @include res(smTab) {
+      padding: 3rem 4rem 8rem 4rem;
+      grid-template-areas:
+        "img1 img1 img2 img2"
+        "img3 img3 img4 img4"
+        "img5 img5 img6 img6"
+        "img9 img9 img8 img8"
+        "img7 img7 img7 img7";
+    }
+    @include res(phone) {
+      padding: 3rem 12rem 8rem 12rem;
+      grid-template-rows: repeat(9, 1fr);
+      grid-template-areas:
+        "img1 img1 img1 img1"
+        "img2 img2 img2 img2"
+        " img3 img3 img3 img3"
+        " img4 img4 img4 img4"
+        " img5 img5 img5 img5"
+        "img6 img6 img6 img6"
+        " img7 img7 img7 img7"
+        " img8 img8 img8 img8"
+        " img9 img9 img9 img9";
+    }
+    @include res(sphone) {
+      padding: 3rem 6rem 8rem 6rem;
+    }
   }
 
   &__svg {
@@ -678,4 +704,82 @@
   background-position: center;
   background-size: cover;
   height: auto;
+}
+
+// INSIDER PAGE
+
+.header--insider {
+  min-height: 40vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(darken($clr-dark, 60%), 0.5),
+      rgba($clr-dark, 0.6),
+      rgba(darken($clr-dark, 60%), 0.6)
+    ),
+    url("../img/enemies.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &__middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.loot {
+  width: 100%;
+  background-image: url("../img/iuxcs6otatmmsarozll7tm5ivntzz5onwi4z0utlleflmgmuojzanfghxpdzfxbl-.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 10rem;
+  &__showcase {
+    max-width: 120rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 4rem;
+    @include res(smTab) {
+      padding: 0 3rem;
+    }
+    @include res(phone) {
+      padding: 0 5rem;
+    }
+  }
+  &__box {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to top,
+        rgba($clr-dark, 0.7) 20%,
+        transparent 50%,
+        transparent 100%
+      );
+      transition: 0.4s ease;
+    }
+  }
+  &__text {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+  &_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

@@ -225,7 +225,12 @@
 .tac {
   text-align: center;
 }
-
+.ls {
+  letter-spacing: 0;
+}
+.my5 {
+  margin-bottom: 5rem;
+}
 .pyb1 {
   padding-bottom: 1rem;
 }
@@ -234,6 +239,9 @@
 }
 .px2 {
   padding: 0 2rem;
+}
+.px4 {
+  padding: 0 4rem;
 }
 .px3 {
   padding: 0.5rem 3rem;
@@ -331,10 +339,11 @@
     border-bottom: 2px solid $clr-blue;
     background-color: darken($clr-blue, 40%);
     clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%);
-
-    @include res(phone) {
-      min-width: 50rem;
-    }
+  }
+}
+.btnn {
+  @include res(phone) {
+    display: none;
   }
 }
 
@@ -420,7 +429,7 @@
     color: white;
     position: absolute;
     bottom: -1rem;
-    right: 0;
+    right: -0.5rem;
     opacity: 0;
     transition: 0.3s ease;
     @include res(smTab) {
