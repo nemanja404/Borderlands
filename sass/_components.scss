@@ -42,13 +42,12 @@
   cursor: pointer;
   transition: all 0.4s ease-in;
   z-index: -11;
-  &:last-child {
-    margin-left: 3rem;
-  }
+
   &:hover {
     transform: translateY(-5px);
   }
 }
+
 .btn--p1 {
   padding: 0.8rem 2rem;
 }
@@ -75,7 +74,7 @@
 .btn--centerz {
   display: flex;
   justify-content: center;
-  margin: 3rem 0;
+  margin: 3rem 0 3rem 0;
   cursor: pointer;
 }
 .ml-2 {
@@ -186,6 +185,9 @@
 }
 .mx11 {
   margin-right: 1rem;
+}
+.mx2rem {
+  margin-right: 3rem;
 }
 .pb4rem {
   padding-bottom: 3rem;
