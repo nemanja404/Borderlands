@@ -339,6 +339,12 @@
     border-bottom: 2px solid $clr-blue;
     background-color: darken($clr-blue, 40%);
     clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 10%);
+    @include res(phone) {
+      min-width: 60rem;
+    }
+    @include res(sphone) {
+      min-width: 50rem;
+    }
   }
 }
 .btnn {
