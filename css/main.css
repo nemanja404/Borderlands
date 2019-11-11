@@ -1637,7 +1637,7 @@ git .footer__privacy-link:not(:last-of-type) {
   display: grid;
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-auto-rows: auto;
+  grid-auto-rows: 1fr;
   grid-gap: 4rem;
 }
 

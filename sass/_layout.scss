@@ -745,7 +745,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-auto-rows: auto;
+    grid-auto-rows: 1fr;
     grid-gap: 4rem;
     @include res(smTab) {
       padding: 0 3rem;
