@@ -51,6 +51,7 @@ html {
   }
   @include res(phone) {
     font-size: 40%;
+user-select:none;
   }
 }
 body {
